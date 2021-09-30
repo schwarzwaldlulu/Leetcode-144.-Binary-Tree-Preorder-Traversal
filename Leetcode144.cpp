@@ -31,9 +31,6 @@ public:
         vector< int > result;
         stack< TreeNode* > roots;
         
-        if( root == nullptr )
-            return result;
-        
         while( root != nullptr || !roots.empty() )
         {
             while( root != nullptr )
