@@ -40,10 +40,10 @@ public:
                 root = root -> left;
             }
             
-            TreeNode* pNode = roots.top();
+            TreeNode* n = roots.top();
             roots.pop();
-            if( pNode -> right != nullptr )
-                root = pNode -> right;
+            if( n -> right != nullptr )
+                root = n -> right;
         }
         return result;
         
